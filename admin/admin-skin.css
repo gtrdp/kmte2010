@@ -1,0 +1,396 @@
+/*CSS nggo admin*/
+body {
+	background:#ebebeb;
+	padding:0px; margin:20px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+@font-face {font-family:Rez; src:url("../images/rezland.ttf");}
+h2 {font-family:Rez; font-size:20px; text-shadow:0 0 1px #000; margin:0;}
+th {
+	background:#efefef;
+}
+
+a, a:visited {
+	color:inherit;
+	text-decoration:none;
+}
+a:hover {
+	color:#fc3;
+	text-decoration:none;
+}
+
+td {padding:5px;}
+tr:hover {background-color:#EEE;}
+
+.box {
+	-moz-box-shadow:0px 0px 13px #aaa; 	-webkit-box-shadow:0px 0px 13px #aaa;	-khtml-box-shadow:0px 0px 13px #aaa;
+	-moz-border-radius:20px;			-webkit-border-radius:20px;				-khtml-border-radius:20px;
+}
+
+#login{
+	width:300px;
+	margin-left:auto; margin-right:auto; margin-top:12%;
+	padding:0px;
+	background:url(images/shad.jpg)  bottom repeat-x;
+}
+
+#login-header{
+	margin-top:15px; margin-bottom:15px;
+}
+
+#userinfo td {
+	margin:5px;
+	font:Arial, "Trebuchet MS";
+	font-size:x-large; font-weight:bold;
+}
+
+#login input {
+	border:solid 2px #aaa;
+	-khtml-border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	background:url(images/input-bg-top.jpg) top repeat-x;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif; font-size:16px;
+	color:#555;
+}
+
+#login input:focus {
+	-webkit-box-shadow:0 0 1px #aaa;
+	-khtml-box-shadow:0 0 1px #aaa;
+	-moz-box-shadow:0 0 1px #aaa;
+	background:url(images/input-bg-bottom.jpg) bottom repeat-x;
+}
+
+.vertical-navi {
+	float:left; width:35px; height:90px;
+	-khtml-border-radius:9px 0 0 9px;
+	-webkit-border-radius:9px 0 0 9px;
+	-moz-border-radius:9px 0 0 9px;
+	
+	-webkit-box-shadow:-7px 0 7px #ddd;
+	-khtml-box-shadow:-7px 0 7px #ddd;
+	-moz-box-shadow:-7px 0 7px #ddd;
+}
+
+/*-----------------------------------------TABBED---------------------------------------------*/
+.tab {
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-khtml-transform:rotate(-90deg);
+	font-size:18px;
+	text-shadow:0 0 3px #fff;
+	color:#fff;
+}
+.tab-active {
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-khtml-transform:rotate(-90deg);
+	font-size:18px;
+	text-shadow:0 0 3px #aaa;
+	color:#000;
+}
+
+#tab-one	{position:relative; top:33px; left:-7px;}
+#tab-two	{position:relative; top:33px; left:-1px;}
+#tab-three	{position:relative; top:33px; left:-23px;}
+#tab-four	{position:relative; top:33px; left:-13px;}
+#tab-five	{position:relative; top:33px; left:-5px;}
+
+
+#one			{z-index:3; position:relative; left:-45px; top:20px;  background:url(images/navi-back.jpg);}
+#one-active		{z-index:3; position:relative; left:-45px; top:20px;  background:#fff;}
+#one-active span a {color:#000;}
+#two			{z-index:1; position:relative; left:-78px; top:120px; background:url(images/navi-back.jpg);}
+#two-active		{z-index:3; position:relative; left:-80px; top:120px; background:#fff;}
+#two-active span a {color:#000;}
+#three			{z-index:1; position:relative; left:-113px; top:220px; background:url(images/navi-back.jpg);}
+#three-active	{z-index:3; position:relative; left:-115px; top:220px; background:#fff;}
+#three-active span a {color:#000;}
+#four			{z-index:1; position:relative; left:-148px; top:320px; background:url(images/navi-back.jpg);}
+#four-active	{z-index:3; position:relative; left:-150px; top:320px; background:#fff;}
+#four-active span a {color:#000;}
+#five			{z-index:1; position:relative; left:-183px; top:420px; background:url(images/navi-back.jpg);}
+#five-active	{z-index:3; position:relative; left:-185px; top:420px; background:#fff;}
+#five-active span a {color:#000;}
+
+#dashboard {
+	background:url(images/dash-shad.jpg)  bottom repeat-x #FFF;
+	width:780px;
+	min-height:580px;
+	vertical-align:middle;
+	padding:10px;
+	float:right;
+	margin-left:-10px;
+	z-index:2; position:absolute;
+}
+
+#dashboard-input td{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:600;
+}
+
+#dashboard-input input {
+	border:solid 1px #aaa;
+	-khtml-border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	background:url(images/input-bg-top.jpg) top repeat-x;
+}
+
+#dashboard-input input:focus {
+	-webkit-box-shadow:0 0 1px #aaa;
+	-khtml-box-shadow:0 0 1px #aaa;
+	-moz-box-shadow:0 0 1px #aaa;
+	background:url(images/input-bg-bottom.jpg) bottom repeat-x;
+}
+
+#container {
+	padding:3px;
+	margin:auto; width:840px;
+}
+
+#kmte-logo {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+#info {
+	margin:10px;
+	float:left;
+}
+
+#photo {
+	border:solid 2px #000;
+	-webkit-box-shadow:0 0 3px #aaa;
+	-khtml-box-shadow:0 0 3px #aaa;
+	-moz-box-shadow:0 0 3px #aaa;
+	float:left;
+	margin:5px;
+	background:#fff;
+	padding:4px;
+}
+
+#userinfo {
+	float:right;
+}
+
+#userinfo td {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+}
+
+#userinfo h3 {
+	font-family:"Trebuchet MS";
+	margin:3px;
+	font-weight:400;
+}
+
+#satu {
+	float:left;
+	width:245px;
+	margin:7px;
+	margin-top:-5px;
+}
+#satu h3{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:400;
+	margin:5px;
+	background:url(images/stripes-thin.jpg) bottom left no-repeat;
+}
+#satu h4 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:600; font-size:14px;
+	margin:3px;
+	font-style:italic;
+}
+#satu h5 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:400; font-size:14px;
+	margin:3px;
+	font-style:italic;
+}
+
+
+#dua {
+	float:left;
+	width:240px;
+	margin:7px;
+	margin-top:-5px;
+}
+#dua h3{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:400;
+	margin:5px;
+	background:url(images/stripes-thin.jpg) bottom left no-repeat;
+}
+#dua h4 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:600; font-size:14px;
+	margin:3px;
+	font-style:italic;
+}
+#dua h5 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:400; font-size:14px;
+	margin:3px;
+	font-style:italic;
+}
+
+#tiga {
+	float:left;
+	width:235px;
+	margin:7px;
+	margin-top:-5px;
+}
+#tiga h3{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:400;
+	margin:5px;
+	background:url(images/stripes-thin.jpg) bottom left no-repeat;
+}
+#tiga h4 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:600; font-size:14px;
+	margin:3px;
+	font-style:italic;
+}
+
+#ver {
+	float:left;
+}
+
+#tombol {
+	float:right;
+	padding:2px;
+	border:solid 2px #aaa;
+	-khtml-border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	background:url(images/tombol-back.jpg);
+	font-family:"Trebuchet MS";
+	font-weight:500;
+	font-size:18px;
+	text-decoration:none;
+	color:#000;
+	cursor:pointer;
+	margin-top:2px;
+	text-shadow:0 0 2px #ddd;
+}
+
+#tombol a {
+	text-decoration:none;
+	color:#000;
+}
+
+#tombol a:visited {
+	color:#000;
+}
+
+.table-info td {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+.table-info tr {
+	cursor:pointer;
+}
+
+.table-info {
+	margin:-3px;
+}
+
+#postingan h3{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:400;
+	margin:5px;
+	background:url(images/stripes-thin.jpg) bottom left no-repeat;
+}
+
+/*#dashboard-input td{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:600;
+}*/
+
+#postingan input {
+	border:solid 1px #aaa;
+	height:25px;
+	-khtml-border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	background:url(images/input-bg-top.jpg) top repeat-x;
+	left:5px; position:relative;
+}
+
+#postingan input:focus {
+	-webkit-box-shadow:0 0 1px #aaa;
+	-khtml-box-shadow:0 0 1px #aaa;
+	-moz-box-shadow:0 0 1px #aaa;
+	background:url(images/input-bg-bottom.jpg) bottom repeat-x;
+}
+
+#postingan select {
+	border:solid 1px #aaa;
+	height:25px;
+	-khtml-border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	background:url(images/input-bg-top.jpg) top repeat-x;
+	left:5px; position:relative;
+}
+
+#postingan option {
+	background:#fff;
+}
+
+#posttitle {
+	float:left;
+}
+
+#categ {
+	float:right;
+}
+
+#post-button {
+	float:right;
+	margin-right:30px;
+}
+
+#post-button .publish{
+	background:url(images/publish-back.jpg) bottom repeat-x;
+	font-family:"Trebuchet MS"; font-weight:500; font-size:18px;
+	margin:7px;
+}
+
+#post-button .save {
+	background:url(images/save-back.jpg) bottom repeat-x;
+	font-family:"Trebuchet MS"; font-weight:500; font-size:18px;
+	margin:7px;
+}
+
+#notifikasi {
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	margin-left:20px; margin-right:20px;
+}
+#nofitikasi h2 {
+	font-size:13px;
+	margin:0;
+	font-family:"Trebuchet MS":	
+}
+#notifikasi input {
+	border:2px solid #666;
+	-moz-border-radius:3px;
+}
+#notifikasi textarea {
+	border:2px solid #666;
+	-moz-border-radius:3px;
+}
+
+.gallery {float:left; margin:5px; border:solid 3px #CCC; margin:5px; text-align:center;}
+.gallery:hover {border:solid 3px #6F0; background-color:#CCFF99;}
+.gallery span {display:compact;}
